@@ -299,6 +299,55 @@
                 color: var(--muted);
             }
 
+            .doc-panel h2,
+            .doc-panel h3,
+            .doc-panel h4 {
+                margin-top: 0;
+            }
+
+            .doc-panel h3 {
+                margin-bottom: 10px;
+                color: var(--accent-2);
+            }
+
+            .doc-panel h4 {
+                margin-top: 18px;
+                margin-bottom: 8px;
+                color: var(--accent);
+            }
+
+            .doc-panel ul {
+                margin: 8px 0 12px 20px;
+                padding: 0;
+                color: var(--muted);
+            }
+
+            .doc-panel li {
+                margin: 6px 0;
+                line-height: 1.5;
+            }
+
+            .doc-panel strong {
+                color: var(--text);
+            }
+
+            .doc-panel .doc-quote {
+                color: var(--text);
+                font-style: italic;
+            }
+
+            .doc-panel .doc-columns {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(260px, 1fr));
+                gap: 16px;
+            }
+
+            @media (max-width: 700px) {
+                .doc-panel .doc-columns {
+                    grid-template-columns: 1fr;
+                }
+            }
+
             @media (max-width: 1100px) {
                 .layout {
                     grid-template-columns: 1fr;
@@ -381,6 +430,186 @@
                         <div id="summary" class="summary"></div>
                     </section>
                     <section class="result-grid" id="resultGrid"></section>
+
+					<section class="panel doc-panel">
+                        <div class="badge">About the framework</div>
+                        <h3>Overview</h3>
+                        <p>
+                            This project is built around a structured way to <strong>describe, generate, and reason about societies</strong> using a set of compact mnemonic frameworks:
+                        </p>
+                        <ul>
+                            <li><strong>Foundation (PET)</strong></li>
+                            <li><strong>Power (MAUL)</strong></li>
+                            <li><strong>Society (CHIB)</strong></li>
+                            <li><strong>Economy (MAT)</strong></li>
+                        </ul>
+                        <p>
+                            They are the result of combining and refining multiple historical and design frameworks.
+                        </p>
+
+                        <h3>G.U.A.R.D.S. (tabletop / GM worldbuilding tool)</h3>
+                        <p>
+                            The original inspiration is the <strong>G.U.A.R.D.S. method</strong>, often used in TTRPG worldbuilding:
+                        </p>
+                        <ul>
+                            <li>Government</li>
+                            <li>Underworld</li>
+                            <li>Altars</li>
+                            <li>Resources</li>
+                            <li>Defenses</li>
+                            <li>Social hubs</li>
+                        </ul>
+                        <p>This system is great because:</p>
+                        <ul>
+                            <li>It is mnemonic-based</li>
+                            <li>It focuses on <strong>functional aspects of society</strong></li>
+                            <li>It is practical for storytelling</li>
+                            <li>It is simple and easy to remember</li>
+                        </ul>
+
+                        <h3>Influences</h3>
+                        <ul>
+                            <li>
+                                <strong>Karl Marx</strong>
+                                <ul>
+                                    <li>Focus on <strong>material conditions</strong> and <strong>class structure</strong></li>
+                                    <li>Material reality → social structure → ideology</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Max Weber</strong>
+                                <ul>
+                                    <li>Authority types (traditional, charismatic, rational)</li>
+                                    <li>Role of <strong>legitimacy and belief systems</strong></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Fernand Braudel / Annales School</strong>
+                                <ul>
+                                    <li>Long-term structural forces</li>
+                                    <li>Geography and environment as constraints</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <h3>The Mnemonics</h3>
+                        <ul>
+                            <li><strong>PET</strong> → what exists</li>
+                            <li><strong>MAT</strong> → what moves</li>
+                            <li><strong>MAUL</strong> → who controls it</li>
+                            <li><strong>CHIB</strong> → how people live with it</li>
+                        </ul>
+
+                        <div class="doc-columns">
+                            <div>
+                                <h4>Foundation (PET)</h4>
+                                <p class="doc-quote">Defines what is physically possible. "What does this world allow?"</p>
+                                <ul>
+                                    <li><strong>P | Population</strong>
+                                        <ul>
+                                            <li>How many people exist and how they are distributed</li>
+                                            <li>Pressure, labor, density</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>E | Environment</strong>
+                                        <ul>
+                                            <li>The physical world</li>
+                                            <li>Climate, terrain, geography</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>T | Technology</strong>
+                                        <ul>
+                                            <li>What tools exist</li>
+                                            <li>What the society is capable of doing</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                                <h4>Power (MAUL)</h4>
+                                <p class="doc-quote">Defines who controls and enforces the system. "Who has power, and how is it enforced?"</p>
+                                <ul>
+                                    <li><strong>M | Military</strong>
+                                        <ul>
+                                            <li>Who can apply force</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>A | Authority</strong>
+                                        <ul>
+                                            <li>Who makes decisions</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>U | Underworld</strong>
+                                        <ul>
+                                            <li>Who operates outside the system</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>L | Law</strong>
+                                        <ul>
+                                            <li>What rules persist over time</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4>Society (CHIB)</h4>
+                                <p class="doc-quote">Defines how people live and relate. "What does it feel like to live here?"</p>
+                                <ul>
+                                    <li><strong>C | Classes</strong>
+                                        <ul>
+                                            <li>Who is above or below whom</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>H | Hubs</strong>
+                                        <ul>
+                                            <li>Where people meet, gather, and share or learn information</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>I | Identity</strong>
+                                        <ul>
+                                            <li>Who belongs and who doesn't</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>B | Beliefs</strong>
+                                        <ul>
+                                            <li>Why the system makes sense to people</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                                <h4>Economy (MAT)</h4>
+                                <p class="doc-quote">Defines how things move and connect. "What flows, and between whom?"</p>
+                                <ul>
+                                    <li><strong>M | Materials</strong>
+                                        <ul>
+                                            <li>What physical goods exist and are used</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>A | Affiliations</strong>
+                                        <ul>
+                                            <li>Allies, enemies, partnerships</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>T | Trade</strong>
+                                        <ul>
+                                            <li>How, where, what, and with whom goods and value move</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h3>Tips for creating</h3>
+                        <p>When creating a society think in causality. For example:</p>
+                        <ul>
+                            <li>Desert environment</li>
+                            <li>→ water scarcity</li>
+                            <li>→ trade routes and control points</li>
+                            <li>→ strong authority over resources</li>
+                            <li>→ rigid class hierarchy</li>
+                            <li>→ beliefs about survival and scarcity</li>
+                        </ul>
+                    </section>
                 </main>
             </div>
         </div>
