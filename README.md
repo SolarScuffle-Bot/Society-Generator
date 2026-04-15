@@ -39,12 +39,12 @@ This system is great because:
 This system also pulls from broader thinkers:
 
 - **Karl Marx**
-  - Focus on **material conditions** and **class structure**
+  - Focus on material conditions and class structure
   - Material reality → social structure → ideology
 
 - **Max Weber**
   - Authority types (traditional, charismatic, rational)
-  - Role of **legitimacy and belief systems**
+  - Role of legitimacy and belief systems
 
 - **Fernand Braudel / Annales School**
   - Long-term structural forces
